@@ -2,26 +2,23 @@
 
 # Math Magicians
 
-"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
+The Bookstore is a website that allows you to:
 
-- Make simple calculations.
-- Read a random math-related quote.
+Display a list of books.
+Add a book.
+Remove a selected book.
 
 ## Built With
 
-- React
-
-## Deploy with Netlify
-
-[Netlify Link](https://react-math-magician-app-panabaka.netlify.app/)
+- React & Redux
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ````
-git clone https://github.com/PRATAP-KUMAR/math-magicians
-cd math-magicians
+git clone https://github.com/PRATAP-KUMAR/react-book-store
+cd react-book-store
 npm start
 ````
 
