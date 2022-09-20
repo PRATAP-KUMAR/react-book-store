@@ -1,11 +1,13 @@
 const CHECK_STATUS = 'CHECK_STATUS';
-const initialState = [];
+const initialState = '';
 
 const checkStatusReducer = (state = initialState, action) => {
-  if (action.type === CHECK_STATUS) {
-    return 'Under construction';
+  switch (action.type) {
+    case CHECK_STATUS:
+      return 'Under construction';
+    default:
+      return state;
   }
-  return state;
 };
 
 export const checkStatus = () => ({

@@ -1,6 +1,29 @@
+import { v4 as uuid4 } from 'uuid';
+
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
-const initialState = [];
+export const initialState = [
+  {
+    id: uuid4(),
+    title: 'book1',
+    author: 'author1',
+  },
+  {
+    id: uuid4(),
+    title: 'book2',
+    author: 'author2',
+  },
+  {
+    id: uuid4(),
+    title: 'book3',
+    author: 'author3',
+  },
+  {
+    id: uuid4(),
+    title: 'book4',
+    author: 'author4',
+  },
+];
 
 const addAndRemoveReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -10,6 +33,7 @@ const addAndRemoveReducer = (state = initialState, action) => {
         {
           id: action.id,
           title: action.title,
+          author: action.author,
         },
       ];
     case REMOVE_BOOK:
@@ -23,10 +47,11 @@ const addAndRemoveReducer = (state = initialState, action) => {
   }
 };
 
-export const addBookAction = (id, title) => ({
+export const addBookAction = (title, author) => ({
   type: ADD_BOOK,
-  id,
+  id: uuid4(),
   title,
+  author,
 });
 
 export const removeBookAction = (id) => ({
