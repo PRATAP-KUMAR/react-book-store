@@ -4,25 +4,31 @@ import { getBooksFromAPIAction } from '../redux/books/books';
 import Header from './Header';
 import Book from './Book';
 import Form from './Form';
+import '../css/Books.css';
 
 const Books = () => {
   const books = useSelector((books) => books.addAndRemoveReducer);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getBooksFromAPIAction());
-  }, [dispatch]);
+    if (books.length === 0) {
+      dispatch(getBooksFromAPIAction());
+    }
+  });
 
   return (
     <>
-      <Header />
-      <div>
-        {books.map((book) => (
-          <>
-            <Book book={book} />
-          </>
-        ))}
-        <Form />
+      <div className="books-container">
+        <Header />
+        <div className="book-content">
+          {books.map((book) => (
+            <>
+              <Book book={book} />
+            </>
+          ))}
+          <hr />
+          <Form />
+        </div>
       </div>
     </>
   );

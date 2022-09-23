@@ -1,0 +1,17 @@
+.books-container {
+  background-color: #fafafa;
+  padding-bottom: 12rem;
+}
+
+.book-content {
+  margin: 2.5rem 6.25rem;
+}
+
+.book-content > hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #e3e1e1;
+  margin: 1em 0;
+  padding: 0;
+}

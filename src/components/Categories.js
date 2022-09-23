@@ -13,9 +13,11 @@ const Categories = () => {
 
   return (
     <>
-      <Header />
-      <button type="button" className="CheckButton" onClick={handleSubmitButtton}>Check Status</button>
-      <h1>{abc}</h1>
+      <div className="categories-container">
+        <Header />
+        <button type="button" className="CheckButton" onClick={handleSubmitButtton}>Check Status</button>
+        <h1>{abc}</h1>
+      </div>
     </>
   );
 };
