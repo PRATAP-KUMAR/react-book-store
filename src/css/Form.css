@@ -23,18 +23,16 @@
 #Form {
   display: flex;
   gap: 2.125rem;
-  width: -webkit-fill-available;
   justify-content: space-between;
 }
 
-.author{
+.author {
   width: 25%;
 }
 
-.title{
+.title {
   width: 50%;
 }
-
 
 #Form > input {
   padding: 0.813rem;
