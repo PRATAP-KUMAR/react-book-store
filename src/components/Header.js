@@ -1,14 +1,18 @@
 import { Link } from 'react-router-dom';
 import '../css/Header.css';
+import { FaUser } from 'react-icons/fa';
 
 const Header = () => (
   <>
-    <div className="panel-bg">
-      <span className="Bookstore-CMS Text-Style-5">Bookstore CMS</span>
+    <div className="top-bar">
+      <span className="Bookstore-CMS">Bookstore CMS</span>
       <nav>
-        <Link to="/"><span className="BOOKS Text-Style-3">BOOKS</span></Link>
-        <Link to="/categories"><span className="CATEGORIES Text-Style-3">CATEGORIES</span></Link>
+        <Link to="/"><span className="BOOKS">BOOKS</span></Link>
+        <Link to="/categories"><span className="CATEGORIES">CATEGORIES</span></Link>
       </nav>
+      <div className="user-logo">
+        <FaUser />
+      </div>
     </div>
   </>
 );

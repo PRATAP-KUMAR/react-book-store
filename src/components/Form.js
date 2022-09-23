@@ -15,7 +15,7 @@ const Form = () => {
       item_id: uuid(),
       title,
       author,
-      category: 'cagegory not yet allotted',
+      category: 'Microverse',
     };
     if (title !== '' && author !== '' && /[a-zA-Z]/.test(title) && /[a-zA-Z]/.test(author)) {
       dispatch(addBookAction(obj));
@@ -42,9 +42,9 @@ const Form = () => {
         </div>
         <div className="FormFields">
           <form id="Form" onSubmit={handleSubmitButton}>
-            <input type="text" placeholder="Book Name" name="BookName" value={title} onChange={onTitleChangeHandle} />
-            <input type="text" placeholder="Author Name" name="AuthorName" value={author} onChange={onAuthorChangeHandle} />
-            <button type="submit" className="SubmitButton">Submit</button>
+            <input type="text" className="title" placeholder="Book Name" name="BookName" value={title} onChange={onTitleChangeHandle} />
+            <input type="text" className="author" placeholder="Author Name" name="AuthorName" value={author} onChange={onAuthorChangeHandle} />
+            <button type="submit" className="SubmitButton">Add Book</button>
           </form>
         </div>
       </div>
