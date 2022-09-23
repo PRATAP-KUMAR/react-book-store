@@ -39,13 +39,23 @@ const Book = ({ book }) => {
             </div>
           </div>
           <div className="two">
-            <div className={textToPass}>
-              <span>
+            <div className="circle">
+              <div className={textToPass}>
+                <span>
+                  {textToPasss}
+                </span>
+                <div className="slice">
+                  <div className="bar" />
+                  <div className="fill" />
+                </div>
+              </div>
+            </div>
+            <div className="percent-box-container">
+              <div className="percentage">
                 {textToPasss}
-              </span>
-              <div className="slice">
-                <div className="bar" />
-                <div className="fill" />
+              </div>
+              <div className="status">
+                completed
               </div>
             </div>
           </div>

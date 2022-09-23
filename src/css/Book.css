@@ -16,8 +16,28 @@
   margin-bottom: 0.75rem;
 }
 
+.two {
+  display: flex;
+  gap: 2rem;
+  margin-left: 2rem;
+}
+
+.percent-box-container {
+  justify-content: center;
+  padding-right: 14rem;
+  border-right: 2px solid #e3e1e1;
+}
+
+.percentage {
+  font-size: 3rem;
+}
+
+.status {
+  color: #121212;
+}
+
 .three {
-  margin-left: 4rem;
+  margin-left: 0;
 }
 
 .Category {
@@ -45,7 +65,7 @@
 .AuthorTitle {
   width: 6.688rem;
   height: 1.188rem;
-  margin: 0.25rem 0 0;
+  margin: 0 0 1.2rem 0;
   font-size: 0.875rem;
   font-weight: 300;
   font-stretch: normal;
@@ -75,21 +95,4 @@
   background: none;
   cursor: pointer;
   border-right: 1px solid #e3e1e1;
-}
-
-.RemoveButton {
-  width: 11.5rem;
-  height: 2.813rem;
-  border-radius: 3px;
-  background-color: #0290ff;
-}
-
-.RemoveButton:hover {
-  background-color: orange;
-  transform: rotate(2deg);
-}
-
-.RemoveButton:active {
-  background-color: cyan;
-  transform: rotate(-2deg);
 }

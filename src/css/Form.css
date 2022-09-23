@@ -1,7 +1,9 @@
 .AddNewBook {
+  width: 100%;
   height: auto;
   border-radius: 4px;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .AddNewBook > div {
@@ -22,6 +24,7 @@
 
 #Form {
   display: flex;
+  width: 100%;
   gap: 2.125rem;
   justify-content: space-between;
 }

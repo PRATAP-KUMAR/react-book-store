@@ -47,5 +47,6 @@
   color: #0290ff;
   font-size: 40px;
   align-items: flex-end;
-  padding-left: 71rem;
+  margin-left: auto;
+  padding-right: 6rem;
 }

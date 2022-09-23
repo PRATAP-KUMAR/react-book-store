@@ -26,6 +26,7 @@ const Books = () => {
               <Book book={book} />
             </>
           ))}
+          <hr />
           <Form />
         </div>
       </div>
